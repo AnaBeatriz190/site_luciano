@@ -7,8 +7,18 @@ function verificar(){
     if (nome == nomeLogin){
         var passNome = true
     }
+    if (senha == senhaLogin){
+        var passSenha = true
+    }
     
-    if ()
+    if (!passNome && !passSenha){
+        alert("Usuário e senha inválidos.")
+
+    }else if (passnome && !passSenha){
+        alert("Senha inválida")
+
+    }else if(!passNome && passSenha){
+        alert("Usuário inválido.")
 
     }else{
         location.href="../PAGES/HOME.html";
