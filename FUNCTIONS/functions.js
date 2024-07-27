@@ -14,7 +14,7 @@ function verificar(){
     if (!passNome && !passSenha){
         alert("Usuário e senha inválidos.")
 
-    }else if (passnome && !passSenha){
+    }else if (passNome && !passSenha){
         alert("Senha inválida")
 
     }else if(!passNome && passSenha){
@@ -23,6 +23,7 @@ function verificar(){
     }else{
         location.href="../PAGES/HOME.html";
     }
+    // location.href="../PAGES/HOME.html";
 
     
 }
