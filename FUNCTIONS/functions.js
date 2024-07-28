@@ -4,6 +4,9 @@ function verificar(){
 
     // var nomeLogin = "ANTONY"
     // var senhaLogin = "12345"
+    var nomeLogin = localStorage.getItem("nomeLogin");
+    var senhaLogin = localStorage.getItem("senhaLogin");
+   
     if (nome == nomeLogin){
         var passNome = true
     }
@@ -24,7 +27,8 @@ function verificar(){
         location.href="../PAGES/HOME.html";
     }
     // location.href="../PAGES/HOME.html";
-
+    console.log(nomeLogin)
+    console.log(senhaLogin)
     
 }
 
@@ -35,7 +39,10 @@ function validar(){
 
 }
 function sinscreve(){
-    var nomeLogin = document.getElementById("USERN").value
-    var senhaLogin = document.getElementById("SENHAN").value
+    localStorage.setItem("nomeLogin", document.getElementById("USERN"));
+    localStorage.setItem("senhaLogin", document.getElementById("SENHAN"));
+
+    // var nomeLogin = document.getElementById("USERN").value
+    // var senhaLogin = document.getElementById("SENHAN").value
     location.href="../index.html"
 }
