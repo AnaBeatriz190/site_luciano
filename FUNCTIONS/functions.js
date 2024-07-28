@@ -2,8 +2,7 @@ function verificar(){
     var nome = document.getElementById("USER").value
     var senha = document.getElementById("SENHA").value
 
-    // var nomeLogin = "ANTONY"
-    // var senhaLogin = "12345"
+
     var nomeLogin = localStorage.getItem("nomeLogin");
     var senhaLogin = localStorage.getItem("senhaLogin");
    
