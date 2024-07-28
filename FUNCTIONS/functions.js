@@ -39,8 +39,8 @@ function validar(){
 
 }
 function sinscreve(){
-    localStorage.setItem("nomeLogin", document.getElementById("USERN"));
-    localStorage.setItem("senhaLogin", document.getElementById("SENHAN"));
+    localStorage.setItem("nomeLogin", document.getElementById("USERN").value);
+    localStorage.setItem("senhaLogin", document.getElementById("SENHAN").value);
 
     // var nomeLogin = document.getElementById("USERN").value
     // var senhaLogin = document.getElementById("SENHAN").value
