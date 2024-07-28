@@ -2,8 +2,8 @@ function verificar(){
     var nome = document.getElementById("USER").value
     var senha = document.getElementById("SENHA").value
 
-    var nomeLogin = "ANTONY"
-    var senhaLogin = "12345"
+    // var nomeLogin = "ANTONY"
+    // var senhaLogin = "12345"
     if (nome == nomeLogin){
         var passNome = true
     }
@@ -26,4 +26,16 @@ function verificar(){
     // location.href="../PAGES/HOME.html";
 
     
+}
+
+function assinar(){
+    location.href="../create.html"
+}
+function validar(){
+
+}
+function sinscreve(){
+    var nomeLogin = document.getElementById("USERN").value
+    var senhaLogin = document.getElementById("SENHAN").value
+    location.href="../index.html"
 }
