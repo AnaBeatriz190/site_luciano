@@ -18,6 +18,7 @@ function verificar(){
 
     }else if (passNome && !passSenha){
         alert("Senha inválida")
+        
 
     }else if(!passNome && passSenha){
         alert("Usuário inválido.")
