@@ -16,15 +16,16 @@ function verificar(){
     if (!passNome && !passSenha){
         // alert("Usuário e senha inválidos.")
         alerta.style.display="block"
-        alerta.innerHTML = "Erro! Por favor, digite o e-mail e a senha."
+        alerta.innerHTML = "Erro! Por favor, digite o e-mail e a senha corretos."
 
     }else if (passNome && !passSenha){
-        alert("Senha inválida")
+        alerta.style.display="block"
+        alerta.innerHTML = "Erro! Por favor, digite a senha correta."
         
 
     }else if(!passNome && passSenha){
-        alert("Usuário inválido.")
-
+        alerta.style.display="block"
+        alerta.innerHTML = "Erro! Por favor, digite o usuário correto"
     }else{
         location.href="../PAGES/HOME.html";
     }
