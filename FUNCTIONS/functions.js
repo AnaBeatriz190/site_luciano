@@ -5,7 +5,7 @@ function verificar(){
 
     var nomeLogin = localStorage.getItem("nomeLogin");
     var senhaLogin = localStorage.getItem("senhaLogin");
-   
+    var alerta = document.getElementById("alerta");
     if (nome == nomeLogin){
         var passNome = true
     }
@@ -14,7 +14,9 @@ function verificar(){
     }
     
     if (!passNome && !passSenha){
-        alert("Usuário e senha inválidos.")
+        // alert("Usuário e senha inválidos.")
+        alerta.style.display="block"
+        alerta.innerHTML = "Erro! Por favor, digite o e-mail e a senha."
 
     }else if (passNome && !passSenha){
         alert("Senha inválida")
