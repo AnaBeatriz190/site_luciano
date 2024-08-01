@@ -6,6 +6,8 @@ const path = require('path');
 const app = express();
 const port = 3000; 
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res)=> {
     fs.readFile(path.join(__dirname, "index.html"), (err, data)=>{
         if(err){
@@ -35,9 +37,10 @@ app.get('/HOME', (req, res) =>{
 });
 
 app.get('/login', (req, res)=> {
-    res.send('Tela de login');
+    // res.send('Tela de login');
+    res.sendFile(path.join(__dirname, '/index.html'));
 });
 
 app.listen(port, ()=>{
-    console.log('Servidor rodando em http://localhost:', port);
+    console.log('Servidor rodando em http://localhost:',port);
 });
