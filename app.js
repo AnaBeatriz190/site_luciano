@@ -41,6 +41,14 @@ app.get('/login', (req, res)=> {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 
+app.get('/home', (req, res)=> {
+    res.sendFile(path.join(__dirname, 'PAGES/HOME.html'));
+});
+
+app.get('/inscricao', (req, res)=> {
+    res.sendFile(path.join(__dirname, '/create.html'));
+});
+
 app.listen(port, ()=>{
     console.log('Servidor rodando em http://localhost:',port);
 });
