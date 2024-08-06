@@ -21,20 +21,20 @@ app.get('/', (req, res)=> {
     });    
 });
 
-app.get('/HOME', (req, res) =>{
-    fs.readFile(path.join(__dirname, "PAGES/HOME.html"), (err, data)=>{
-        if(err){
-            res.writeHead(500, {'Content-Type': 'text/plain'});
-            res.end('Erro interno do servidor.');
-            return;
-        }else{
-            console.log('Oi')
-        }
+// app.get('/HOME', (req, res) =>{
+//     fs.readFile(path.join(__dirname, "PAGES/HOME.html"), (err, data)=>{
+//         if(err){
+//             res.writeHead(500, {'Content-Type': 'text/plain'});
+//             res.end('Erro interno do servidor.');
+//             return;
+//         }else{
+//             console.log('Oi')
+//         }
 
-        res.writeHead(200, {'Content-Type' : 'text/html'});
-        res.end(data);
-    });    
-});
+//         res.writeHead(200, {'Content-Type' : 'text/html'});
+//         res.end(data);
+//     });    
+// });
 
 app.get('/login', (req, res)=> {
     // res.send('Tela de login');
@@ -42,7 +42,7 @@ app.get('/login', (req, res)=> {
 });
 
 app.get('/home', (req, res)=> {
-    res.sendFile(path.join(__dirname, 'PAGES/HOME.html'));
+    res.sendFile(path.join(__dirname, '/PAGES/HOME.html'));
 });
 
 app.get('/inscricao', (req, res)=> {
